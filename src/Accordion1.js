@@ -4,7 +4,9 @@ import styled from "styled-components";
 const Accordion1 = ({ label, content, level, weight, size }) => {
   const [active, setActive] = React.useState(false);
   return (
-    <>
+    <div
+      style={{ border: "2px solid grey", margin: "5px", borderRadius: "4px" }}
+    >
       <LabelWrapper level={level} weight={weight} size={size} content={content}>
         <div>{label}</div>
         <div style={{ cursor: "pointer" }} onClick={() => setActive(!active)}>
@@ -30,7 +32,7 @@ const Accordion1 = ({ label, content, level, weight, size }) => {
           )}
         </>
       )}
-    </>
+    </div>
   );
 };
 
@@ -43,17 +45,20 @@ const LabelWrapper = styled.div`
   justify-content: space-between;
   font-weight: ${(props) => props.weight};
   font-size: ${(props) => props.size}px;
-  border-bottom: ${(props) =>
+  border-radius: 4px;
+  padding: 5px;
+  //border: ${(props) =>
     Array.isArray(props.content) && props.content.length > 0
       ? "2px solid grey"
       : ""};
 `;
 
 const ContentWrapper = styled.div`
-  border-bottom: 2px solid grey;
+  //border-radius: 4px;
+  //border: 2px solid grey;
   margin-left: ${(props) => props.level}px;
   margin-bottom: 5px;
-  padding-bottom: 5px;
+  padding: 5px;
   font-weight: ${(props) => props.weight};
   font-size: ${(props) => props.size}px;
 `;
