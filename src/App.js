@@ -62,7 +62,7 @@ let data2 = [
 
 export default function App() {
   return (
-    <div style={{ width: "50%", left: "25%" }}>
+    <div style={{ width: "50%", left: "25%" }} id="App">
       {data3.map((item) => (
         <Accordion1
           label={item.label}

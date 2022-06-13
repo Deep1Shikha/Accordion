@@ -1,4 +1,8 @@
-.App {
+#App {
   font-family: sans-serif;
   text-align: center;
+  border: 2px solid turquoise;
+  background-color: #fcf8e8;
+  padding: 5px;
+  box-sizing: border-box;
 }
