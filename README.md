@@ -8,5 +8,7 @@ It demonstrates a nested accordion, as shown below.
 # Give it a star, be a stargazer ⭐ 🌟 , if you found it helpful.
 # Thanks for dropping by. ⚛️ 🤝
 
+Feel free to update the designs, optimize the code.
+
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
